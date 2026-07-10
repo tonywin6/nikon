@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015AF0830FEC030A0C1504EA /* AppShellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB2C743F26182BAEAB90EF /* AppShellViewModel.swift */; };
+		019E9D2ECAD4F07511A1F824 /* ConnectionSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA72A75DC47D80B1D84C507 /* ConnectionSetupView.swift */; };
+		01A77D4C76B904FA0D0019E1 /* NikonConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125AD8AA606E5DEF7314D3F /* NikonConnectApp.swift */; };
+		01EACF899D98680A173B6C12 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D60C6ED847992AC74E38C /* GalleryViewModel.swift */; };
+		02016906DC00223A963D9E71 /* PTPIPSession+AssetTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C1EB894EE12B44CFBDA44 /* PTPIPSession+AssetTraversal.swift */; };
+		054B0F4F4FB99F0829FEE475 /* CameraConnectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D4F3273ECA39AE3020835 /* CameraConnectionConfig.swift */; };
+		058AD3D11615CA7CA57E3F16 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A70AAF8CFB5116E4EAC99 /* AppLogger.swift */; };
+		0A15A58CFFA234348C997CE7 /* SettingsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B0A0F471726A1004E18B5 /* SettingsContainerView.swift */; };
+		0B52FFF496EB909D07F6038A /* ConnectionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CCA4FC9AF2BEA922D0632 /* ConnectionContainerView.swift */; };
+		0C6477072E3DEB60E15CE883 /* PTPIPSession+Transfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB30D73CCA3F7BF366D9D793 /* PTPIPSession+Transfers.swift */; };
+		0DA4EAEDB93E9FB294A681EB /* ConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E87AB6CE30BE411564D74C /* ConnectionViewModel.swift */; };
+		12AF060FD96063D9ACCD7F3E /* AlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9CC59E3678EF0C85B19D38 /* AlertContext.swift */; };
+		153B86EB7EE7F5D8D37A826E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF19024DE3741ABD0F81A9C /* Formatters.swift */; };
+		16F1F63DF068D5872B026175 /* DownloadStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9FE0E7117840E1DC3F8090 /* DownloadStoreTests.swift */; };
+		19DA057EE2738D4E304F3688 /* PhotoAssetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2162709CCD0A839C92D7003 /* PhotoAssetRow.swift */; };
+		290F1A8C6227937823E9D9AC /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A06ABC98385B72C5175F62 /* RootTabView.swift */; };
+		2C4BF8DF8402A236068EEC81 /* DownloadActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38C661FF5EBD06BC5BEE41A7 /* DownloadActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FD33E23DFFBB8A9E26DB93D /* DownloadQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B03A6B35F7FAF62ADD400 /* DownloadQueueTests.swift */; };
+		31B0B0DECB4BF4B43D4656C9 /* CameraAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87B1D6BDB8DA5F524833EC /* CameraAppError.swift */; };
+		37AD069E9EF5F9DE26D55275 /* PhotoAssetMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7B539B296DC85D8509864 /* PhotoAssetMerge.swift */; };
+		40565CF5D8324FF7C8C56167 /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB912B0D64338288B55F273 /* StatusBadgeView.swift */; };
+		411280814B4793B200616B6A /* ExperimentalNikonTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5124B4CA2E00FF524C20 /* ExperimentalNikonTransport.swift */; };
+		4190B44CAE038EB1835DA1A5 /* CameraTransportFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9803CC8A944668479EE6D6 /* CameraTransportFactoryProtocol.swift */; };
+		42545AC349BC74146BACAE70 /* CameraTransportMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B034F587D4C687A56A2B0B8 /* CameraTransportMode.swift */; };
+		4407DAF3215B566EDB779D30 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCECD6B9339A9DDDE20BF /* DownloadsView.swift */; };
+		44C817AECB4F046786A67E19 /* DownloadJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C7B711C36197E08E6A15F /* DownloadJob.swift */; };
+		454F053FD919BD629A4F66F5 /* DownloadManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D19CF61AC7F42A97EC90B /* DownloadManagerViewModel.swift */; };
+		56F0D77BA74FDDEBF2FF9393 /* GalleryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DBC35CD117E8088E3FFA0 /* GalleryContainerView.swift */; };
+		5866D90034F60B18E96C01E9 /* PTPIPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6624B2037101A1CBC6ACEE1 /* PTPIPSession.swift */; };
+		5A52B265CF2451EB56E1195D /* PTPIPPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA0575A2C6E05FAAC819ACF /* PTPIPPrimitives.swift */; };
+		5B629771DAFD51B54318B3E1 /* PTPIPSessionAssetTraversalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCC1C95996B6DA5C761977 /* PTPIPSessionAssetTraversalTests.swift */; };
+		5F640F944FB1D0E56562DDCA /* DownloadQueueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F730A39773B93AF7726CCBF /* DownloadQueueState.swift */; };
+		64C6DB1FC21157C5121C5DAE /* DownloadThroughputDiagnosticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A58A08E8EAAE4EA638870B /* DownloadThroughputDiagnosticsTests.swift */; };
+		671E52AB213BC454EC053737 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE900372171A809ACD9531C /* PhotoAsset.swift */; };
+		69F8D2726A9EBC1F796E3290 /* AssetThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEB4A5735C1CD667D4849A /* AssetThumbnailService.swift */; };
+		71BD8542A8859468D3438D4B /* CameraTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91ED29CE3F9A4CA026197ED /* CameraTransport.swift */; };
+		767B9E6B4337C250B97D7761 /* DownloadActivityWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6F6ABB2CEC7636AFA01FF /* DownloadActivityWidgetBundle.swift */; };
+		7B8AE830C8D5D6617A2B1F38 /* PhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ACC2AF21A5F5D4886B145 /* PhotoBrowserView.swift */; };
+		8305284A72A04C2C82EF675C /* AppPreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3A300DC6C1366E7128EC7 /* AppPreferencesStore.swift */; };
+		83058753A0FEA4A7BFCE6E41 /* DownloadRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008C334B6DE819C2286EBEF /* DownloadRecord.swift */; };
+		8C4DCD2BE646CF2CEAC9BBD6 /* AppPreferencesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC0E363BE52F1BD2450886 /* AppPreferencesStoreTests.swift */; };
+		8C8824ED95C1126F6A40D897 /* PTPIPSessionTransferStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5584BD70C2C58E8CB12F222F /* PTPIPSessionTransferStrategyTests.swift */; };
+		8D91CD59086CE8911A12C7AF /* DownloadStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80720F73A9C8A0D7540A9576 /* DownloadStoring.swift */; };
+		96CBC4DC8062CD7990B27E7A /* DownloadThroughputReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF04B7647A6A8288059671A /* DownloadThroughputReportRow.swift */; };
+		9B31ED3B1D29746C4E369355 /* DownloadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E8341BB9FEE224A378F4C0 /* DownloadStore.swift */; };
+		A4AF3D133E6B3E689B164DA6 /* CameraWorkflowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FFF83ADE367AF29A991FB0 /* CameraWorkflowState.swift */; };
+		A5BF2CC27F20E49BA8E0CA79 /* DownloadActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70CFE3C32A56520B25C035E /* DownloadActivityAttributes.swift */; };
+		A79C15946A73A3F1B5E28185 /* ActiveDownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E0DE43F60B89A9D684E68 /* ActiveDownloadProgress.swift */; };
+		A7C745AE3F4C7B4E2E5A3A84 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF86FCA1D29821D2169C49A /* SharedComponents.swift */; };
+		A9F1315091C74BE19EA2E162 /* CameraTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE45470B1DBBA122A3B631 /* CameraTransportFactory.swift */; };
+		AB395CA34EA0B3CC19E3584B /* CameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E22A8154B2328EE51FA2C2 /* CameraSession.swift */; };
+		AEB1553C61CAED2E3C690EE3 /* AppPreferencesStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C17A35EC9B10CC9B16C10 /* AppPreferencesStoring.swift */; };
+		B27CCCD431B11EC27DB0DC3A /* PTPIPTCPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11BBEE5EF04145DF1897D5 /* PTPIPTCPConnection.swift */; };
+		B3DC5610DB78F088CA2D67C2 /* PTPIPSession+Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9105270F61CE4770E0EF113 /* PTPIPSession+Lifecycle.swift */; };
+		BF6B70E00D2CA846A30D64DA /* DownloadThroughputDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCC3D40F590A073A4CA911 /* DownloadThroughputDiagnostics.swift */; };
+		C1E772D7C1BFFEFD9CB0EF00 /* DownloadActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146897F095EC0F9FC87A714 /* DownloadActivityWidget.swift */; };
+		D8CF2F5D683D5FF4E68358C2 /* DownloadLiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8973CADDD7F7409DFDA56 /* DownloadLiveActivityController.swift */; };
+		DC6454E25B983642CB5AFEB3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C59E8E77C36AAC9E30ACAF /* SettingsView.swift */; };
+		DF342EEB3F8FAD2BA33DFDF3 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D8D7800205D0A7B49DFFF /* LogEntry.swift */; };
+		E0AFD9E900FCA618EB52C23A /* DownloadRecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8586BECF98CD8C4DF84ED21 /* DownloadRecordRow.swift */; };
+		E723D16261A59D0B228B4745 /* CameraSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597D95EB33CD9DCDF00E9E /* CameraSessionCoordinator.swift */; };
+		E85D31CBD7F1B35BF66B04E5 /* PhotoLibraryExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5D52107E20CC0C369E6D5 /* PhotoLibraryExportService.swift */; };
+		EB1191B0D86508F7BC704924 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187FFD17694CD61905FB3E /* AppTheme.swift */; };
+		EC8123ABC0C81555E0247B5F /* AssetThumbnailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C98B3D7EF1E7107A88D302 /* AssetThumbnailServiceTests.swift */; };
+		EE9E4067065D0277B26AECA3 /* DownloadsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F05D894452352641B8BE8 /* DownloadsContainerView.swift */; };
+		FA39A88CA78F1EDF41CC0C80 /* AssetThumbnailServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093001D4BE834739E1F29BF /* AssetThumbnailServing.swift */; };
+		FF59A12572A17FAA5174287E /* BackgroundDownloadExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BD9891A8CFD4FFD364124 /* BackgroundDownloadExecutionService.swift */; };
+		FF69B70ADA7BE71A69379C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942982F0B16464602B9A77EF /* Assets.xcassets */; };
+		FFAA54AC90ACEB6F49D7BAB5 /* DownloadActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70CFE3C32A56520B25C035E /* DownloadActivityAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054FBAAC831F24D2EB980BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71396A98AFCA76A12ED28526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36BF0ABA4B73F5A11B5F94EC;
+			remoteInfo = DownloadActivityWidgetExtension;
+		};
+		F9A5556B0242A1E31C802D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71396A98AFCA76A12ED28526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED7A56FD81A574F4683A08A5;
+			remoteInfo = NikonConnectIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7CFDD94084022549264104F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C4BF8DF8402A236068EEC81 /* DownloadActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0146897F095EC0F9FC87A714 /* DownloadActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadActivityWidget.swift; sourceTree = "<group>"; };
+		06E7B539B296DC85D8509864 /* PhotoAssetMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAssetMerge.swift; sourceTree = "<group>"; };
+		0AF86FCA1D29821D2169C49A /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		0B8A70AAF8CFB5116E4EAC99 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		0D6E0DE43F60B89A9D684E68 /* ActiveDownloadProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDownloadProgress.swift; sourceTree = "<group>"; };
+		10C98B3D7EF1E7107A88D302 /* AssetThumbnailServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetThumbnailServiceTests.swift; sourceTree = "<group>"; };
+		113C7B711C36197E08E6A15F /* DownloadJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJob.swift; sourceTree = "<group>"; };
+		23EC0E363BE52F1BD2450886 /* AppPreferencesStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferencesStoreTests.swift; sourceTree = "<group>"; };
+		26C6F6ABB2CEC7636AFA01FF /* DownloadActivityWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadActivityWidgetBundle.swift; sourceTree = "<group>"; };
+		2AE900372171A809ACD9531C /* PhotoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
+		2B2D19CF61AC7F42A97EC90B /* DownloadManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagerViewModel.swift; sourceTree = "<group>"; };
+		2FA72A75DC47D80B1D84C507 /* ConnectionSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSetupView.swift; sourceTree = "<group>"; };
+		308D60C6ED847992AC74E38C /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		38C661FF5EBD06BC5BEE41A7 /* DownloadActivityWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DownloadActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDCC1C95996B6DA5C761977 /* PTPIPSessionAssetTraversalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPIPSessionAssetTraversalTests.swift; sourceTree = "<group>"; };
+		476B03A6B35F7FAF62ADD400 /* DownloadQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadQueueTests.swift; sourceTree = "<group>"; };
+		4DD3A300DC6C1366E7128EC7 /* AppPreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferencesStore.swift; sourceTree = "<group>"; };
+		4E9803CC8A944668479EE6D6 /* CameraTransportFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTransportFactoryProtocol.swift; sourceTree = "<group>"; };
+		5093001D4BE834739E1F29BF /* AssetThumbnailServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetThumbnailServing.swift; sourceTree = "<group>"; };
+		5584BD70C2C58E8CB12F222F /* PTPIPSessionTransferStrategyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPIPSessionTransferStrategyTests.swift; sourceTree = "<group>"; };
+		5F4D4F3273ECA39AE3020835 /* CameraConnectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConnectionConfig.swift; sourceTree = "<group>"; };
+		5F730A39773B93AF7726CCBF /* DownloadQueueState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadQueueState.swift; sourceTree = "<group>"; };
+		6008C334B6DE819C2286EBEF /* DownloadRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadRecord.swift; sourceTree = "<group>"; };
+		62E22A8154B2328EE51FA2C2 /* CameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSession.swift; sourceTree = "<group>"; };
+		6BDE45470B1DBBA122A3B631 /* CameraTransportFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTransportFactory.swift; sourceTree = "<group>"; };
+		6CA5D52107E20CC0C369E6D5 /* PhotoLibraryExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryExportService.swift; sourceTree = "<group>"; };
+		74EB2C743F26182BAEAB90EF /* AppShellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShellViewModel.swift; sourceTree = "<group>"; };
+		7B034F587D4C687A56A2B0B8 /* CameraTransportMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTransportMode.swift; sourceTree = "<group>"; };
+		80720F73A9C8A0D7540A9576 /* DownloadStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadStoring.swift; sourceTree = "<group>"; };
+		83597D95EB33CD9DCDF00E9E /* CameraSessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSessionCoordinator.swift; sourceTree = "<group>"; };
+		84C59E8E77C36AAC9E30ACAF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		85FFF83ADE367AF29A991FB0 /* CameraWorkflowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraWorkflowState.swift; sourceTree = "<group>"; };
+		87EDF9C7CF499C7270F84A40 /* NikonConnectIOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NikonConnectIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FEB4A5735C1CD667D4849A /* AssetThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetThumbnailService.swift; sourceTree = "<group>"; };
+		93F89201220EE59E20959465 /* NikonConnectIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NikonConnectIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		942982F0B16464602B9A77EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97FF5124B4CA2E00FF524C20 /* ExperimentalNikonTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentalNikonTransport.swift; sourceTree = "<group>"; };
+		98A06ABC98385B72C5175F62 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		A2162709CCD0A839C92D7003 /* PhotoAssetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAssetRow.swift; sourceTree = "<group>"; };
+		A2E87AB6CE30BE411564D74C /* ConnectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewModel.swift; sourceTree = "<group>"; };
+		A968BD371949792A88D7D54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AB11BBEE5EF04145DF1897D5 /* PTPIPTCPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPIPTCPConnection.swift; sourceTree = "<group>"; };
+		AE2CCA4FC9AF2BEA922D0632 /* ConnectionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionContainerView.swift; sourceTree = "<group>"; };
+		B2FCC3D40F590A073A4CA911 /* DownloadThroughputDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadThroughputDiagnostics.swift; sourceTree = "<group>"; };
+		B68DBC35CD117E8088E3FFA0 /* GalleryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryContainerView.swift; sourceTree = "<group>"; };
+		C2A58A08E8EAAE4EA638870B /* DownloadThroughputDiagnosticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadThroughputDiagnosticsTests.swift; sourceTree = "<group>"; };
+		C37D8D7800205D0A7B49DFFF /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		C46B0A0F471726A1004E18B5 /* SettingsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainerView.swift; sourceTree = "<group>"; };
+		C6624B2037101A1CBC6ACEE1 /* PTPIPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPIPSession.swift; sourceTree = "<group>"; };
+		C9105270F61CE4770E0EF113 /* PTPIPSession+Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PTPIPSession+Lifecycle.swift"; sourceTree = "<group>"; };
+		CF9FE0E7117840E1DC3F8090 /* DownloadStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadStoreTests.swift; sourceTree = "<group>"; };
+		D22C17A35EC9B10CC9B16C10 /* AppPreferencesStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferencesStoring.swift; sourceTree = "<group>"; };
+		D37C1EB894EE12B44CFBDA44 /* PTPIPSession+AssetTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PTPIPSession+AssetTraversal.swift"; sourceTree = "<group>"; };
+		D47F05D894452352641B8BE8 /* DownloadsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsContainerView.swift; sourceTree = "<group>"; };
+		D9187FFD17694CD61905FB3E /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		DCF19024DE3741ABD0F81A9C /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		E04ACC2AF21A5F5D4886B145 /* PhotoBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserView.swift; sourceTree = "<group>"; };
+		E19BD9891A8CFD4FFD364124 /* BackgroundDownloadExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadExecutionService.swift; sourceTree = "<group>"; };
+		E8586BECF98CD8C4DF84ED21 /* DownloadRecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadRecordRow.swift; sourceTree = "<group>"; };
+		E8B8973CADDD7F7409DFDA56 /* DownloadLiveActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadLiveActivityController.swift; sourceTree = "<group>"; };
+		EC87B1D6BDB8DA5F524833EC /* CameraAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppError.swift; sourceTree = "<group>"; };
+		EEF04B7647A6A8288059671A /* DownloadThroughputReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadThroughputReportRow.swift; sourceTree = "<group>"; };
+		EFB912B0D64338288B55F273 /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		F125AD8AA606E5DEF7314D3F /* NikonConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikonConnectApp.swift; sourceTree = "<group>"; };
+		F3FBCECD6B9339A9DDDE20BF /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		F6E8341BB9FEE224A378F4C0 /* DownloadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadStore.swift; sourceTree = "<group>"; };
+		F70CFE3C32A56520B25C035E /* DownloadActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadActivityAttributes.swift; sourceTree = "<group>"; };
+		F91ED29CE3F9A4CA026197ED /* CameraTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTransport.swift; sourceTree = "<group>"; };
+		FA9CC59E3678EF0C85B19D38 /* AlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContext.swift; sourceTree = "<group>"; };
+		FB30D73CCA3F7BF366D9D793 /* PTPIPSession+Transfers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PTPIPSession+Transfers.swift"; sourceTree = "<group>"; };
+		FEA0575A2C6E05FAAC819ACF /* PTPIPPrimitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPIPPrimitives.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		22AD4D15C5B6046DC47FF36D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4844A9E1BEE16E100B0193D7 /* ConnectionSetup */,
+				D905505F9DE9FD4CFF576928 /* Downloads */,
+				A46351E64308B02F5E3E91CA /* PhotoBrowser */,
+				730AE27A1FDC2D82C76704DD /* Settings */,
+				9C05A51E21A9A8412A8332F4 /* Shared */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		351FF9CB8F6B6B88F37CC2CF /* DownloadActivityWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0146897F095EC0F9FC87A714 /* DownloadActivityWidget.swift */,
+				26C6F6ABB2CEC7636AFA01FF /* DownloadActivityWidgetBundle.swift */,
+				A968BD371949792A88D7D54D /* Info.plist */,
+			);
+			path = DownloadActivityWidget;
+			sourceTree = "<group>";
+		};
+		4844A9E1BEE16E100B0193D7 /* ConnectionSetup */ = {
+			isa = PBXGroup;
+			children = (
+				AE2CCA4FC9AF2BEA922D0632 /* ConnectionContainerView.swift */,
+				2FA72A75DC47D80B1D84C507 /* ConnectionSetupView.swift */,
+				A2E87AB6CE30BE411564D74C /* ConnectionViewModel.swift */,
+			);
+			path = ConnectionSetup;
+			sourceTree = "<group>";
+		};
+		494504D68AF00B38940CBC90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4DD3A300DC6C1366E7128EC7 /* AppPreferencesStore.swift */,
+				D22C17A35EC9B10CC9B16C10 /* AppPreferencesStoring.swift */,
+				92FEB4A5735C1CD667D4849A /* AssetThumbnailService.swift */,
+				5093001D4BE834739E1F29BF /* AssetThumbnailServing.swift */,
+				E19BD9891A8CFD4FFD364124 /* BackgroundDownloadExecutionService.swift */,
+				F91ED29CE3F9A4CA026197ED /* CameraTransport.swift */,
+				6BDE45470B1DBBA122A3B631 /* CameraTransportFactory.swift */,
+				4E9803CC8A944668479EE6D6 /* CameraTransportFactoryProtocol.swift */,
+				E8B8973CADDD7F7409DFDA56 /* DownloadLiveActivityController.swift */,
+				F6E8341BB9FEE224A378F4C0 /* DownloadStore.swift */,
+				80720F73A9C8A0D7540A9576 /* DownloadStoring.swift */,
+				97FF5124B4CA2E00FF524C20 /* ExperimentalNikonTransport.swift */,
+				6CA5D52107E20CC0C369E6D5 /* PhotoLibraryExportService.swift */,
+				FEA0575A2C6E05FAAC819ACF /* PTPIPPrimitives.swift */,
+				C6624B2037101A1CBC6ACEE1 /* PTPIPSession.swift */,
+				D37C1EB894EE12B44CFBDA44 /* PTPIPSession+AssetTraversal.swift */,
+				C9105270F61CE4770E0EF113 /* PTPIPSession+Lifecycle.swift */,
+				FB30D73CCA3F7BF366D9D793 /* PTPIPSession+Transfers.swift */,
+				AB11BBEE5EF04145DF1897D5 /* PTPIPTCPConnection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		49660B9F2C474EB258A56220 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				23EC0E363BE52F1BD2450886 /* AppPreferencesStoreTests.swift */,
+				10C98B3D7EF1E7107A88D302 /* AssetThumbnailServiceTests.swift */,
+				476B03A6B35F7FAF62ADD400 /* DownloadQueueTests.swift */,
+				CF9FE0E7117840E1DC3F8090 /* DownloadStoreTests.swift */,
+				C2A58A08E8EAAE4EA638870B /* DownloadThroughputDiagnosticsTests.swift */,
+				3DDCC1C95996B6DA5C761977 /* PTPIPSessionAssetTraversalTests.swift */,
+				5584BD70C2C58E8CB12F222F /* PTPIPSessionTransferStrategyTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4A45D5F2731D249E4A50B94C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				74EB2C743F26182BAEAB90EF /* AppShellViewModel.swift */,
+				D9187FFD17694CD61905FB3E /* AppTheme.swift */,
+				83597D95EB33CD9DCDF00E9E /* CameraSessionCoordinator.swift */,
+				F125AD8AA606E5DEF7314D3F /* NikonConnectApp.swift */,
+				98A06ABC98385B72C5175F62 /* RootTabView.swift */,
+				EFB912B0D64338288B55F273 /* StatusBadgeView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4FE60E5CA40E175FB6CC0AF3 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0B8A70AAF8CFB5116E4EAC99 /* AppLogger.swift */,
+				DCF19024DE3741ABD0F81A9C /* Formatters.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		522289ED077EF290C3CF37DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				942982F0B16464602B9A77EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		730AE27A1FDC2D82C76704DD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C46B0A0F471726A1004E18B5 /* SettingsContainerView.swift */,
+				84C59E8E77C36AAC9E30ACAF /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		88D528A4C649841189C85016 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38C661FF5EBD06BC5BEE41A7 /* DownloadActivityWidgetExtension.appex */,
+				93F89201220EE59E20959465 /* NikonConnectIOS.app */,
+				87EDF9C7CF499C7270F84A40 /* NikonConnectIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D7899607BF1893200EE67D5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E0DE43F60B89A9D684E68 /* ActiveDownloadProgress.swift */,
+				FA9CC59E3678EF0C85B19D38 /* AlertContext.swift */,
+				EC87B1D6BDB8DA5F524833EC /* CameraAppError.swift */,
+				5F4D4F3273ECA39AE3020835 /* CameraConnectionConfig.swift */,
+				62E22A8154B2328EE51FA2C2 /* CameraSession.swift */,
+				7B034F587D4C687A56A2B0B8 /* CameraTransportMode.swift */,
+				85FFF83ADE367AF29A991FB0 /* CameraWorkflowState.swift */,
+				F70CFE3C32A56520B25C035E /* DownloadActivityAttributes.swift */,
+				113C7B711C36197E08E6A15F /* DownloadJob.swift */,
+				5F730A39773B93AF7726CCBF /* DownloadQueueState.swift */,
+				6008C334B6DE819C2286EBEF /* DownloadRecord.swift */,
+				B2FCC3D40F590A073A4CA911 /* DownloadThroughputDiagnostics.swift */,
+				C37D8D7800205D0A7B49DFFF /* LogEntry.swift */,
+				2AE900372171A809ACD9531C /* PhotoAsset.swift */,
+				06E7B539B296DC85D8509864 /* PhotoAssetMerge.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9C05A51E21A9A8412A8332F4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0AF86FCA1D29821D2169C49A /* SharedComponents.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A46351E64308B02F5E3E91CA /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				B68DBC35CD117E8088E3FFA0 /* GalleryContainerView.swift */,
+				308D60C6ED847992AC74E38C /* GalleryViewModel.swift */,
+				A2162709CCD0A839C92D7003 /* PhotoAssetRow.swift */,
+				E04ACC2AF21A5F5D4886B145 /* PhotoBrowserView.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		D905505F9DE9FD4CFF576928 /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				2B2D19CF61AC7F42A97EC90B /* DownloadManagerViewModel.swift */,
+				E8586BECF98CD8C4DF84ED21 /* DownloadRecordRow.swift */,
+				D47F05D894452352641B8BE8 /* DownloadsContainerView.swift */,
+				F3FBCECD6B9339A9DDDE20BF /* DownloadsView.swift */,
+				EEF04B7647A6A8288059671A /* DownloadThroughputReportRow.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		DE20FA6131010BA640C52FCB = {
+			isa = PBXGroup;
+			children = (
+				4A45D5F2731D249E4A50B94C /* App */,
+				8D7899607BF1893200EE67D5 /* Domain */,
+				351FF9CB8F6B6B88F37CC2CF /* DownloadActivityWidget */,
+				22AD4D15C5B6046DC47FF36D /* Features */,
+				4FE60E5CA40E175FB6CC0AF3 /* Infrastructure */,
+				522289ED077EF290C3CF37DC /* Resources */,
+				494504D68AF00B38940CBC90 /* Services */,
+				49660B9F2C474EB258A56220 /* Tests */,
+				88D528A4C649841189C85016 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36BF0ABA4B73F5A11B5F94EC /* DownloadActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD36CB86C368D2C218349460 /* Build configuration list for PBXNativeTarget "DownloadActivityWidgetExtension" */;
+			buildPhases = (
+				A5FED79C7A693FD2FE1FE759 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadActivityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DownloadActivityWidgetExtension;
+			productReference = 38C661FF5EBD06BC5BEE41A7 /* DownloadActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		65D4FAECF461001C275FD836 /* NikonConnectIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E10EFA02C9C72BA0D69DF2 /* Build configuration list for PBXNativeTarget "NikonConnectIOSTests" */;
+			buildPhases = (
+				0E0748794438A7C2BC9CCB28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4E9138B75C1E4A55A0C164 /* PBXTargetDependency */,
+			);
+			name = NikonConnectIOSTests;
+			packageProductDependencies = (
+			);
+			productName = NikonConnectIOSTests;
+			productReference = 87EDF9C7CF499C7270F84A40 /* NikonConnectIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED7A56FD81A574F4683A08A5 /* NikonConnectIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D8AD1A24B0CBF5DEDE195EE /* Build configuration list for PBXNativeTarget "NikonConnectIOS" */;
+			buildPhases = (
+				6CF4E690F46AD0FD5A9CA05F /* Sources */,
+				E51124EE80A939337D8FAFDB /* Resources */,
+				D7CFDD94084022549264104F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68ACBDF69F43E412284BCB1 /* PBXTargetDependency */,
+			);
+			name = NikonConnectIOS;
+			packageProductDependencies = (
+			);
+			productName = NikonConnectIOS;
+			productReference = 93F89201220EE59E20959465 /* NikonConnectIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71396A98AFCA76A12ED28526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					36BF0ABA4B73F5A11B5F94EC = {
+						DevelopmentTeam = 6P3T8J877R;
+						ProvisioningStyle = Automatic;
+					};
+					65D4FAECF461001C275FD836 = {
+						DevelopmentTeam = 6P3T8J877R;
+						ProvisioningStyle = Automatic;
+					};
+					ED7A56FD81A574F4683A08A5 = {
+						DevelopmentTeam = 6P3T8J877R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0148D55F11653571B5663666 /* Build configuration list for PBXProject "NikonConnectIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DE20FA6131010BA640C52FCB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 88D528A4C649841189C85016 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36BF0ABA4B73F5A11B5F94EC /* DownloadActivityWidgetExtension */,
+				ED7A56FD81A574F4683A08A5 /* NikonConnectIOS */,
+				65D4FAECF461001C275FD836 /* NikonConnectIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E51124EE80A939337D8FAFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF69B70ADA7BE71A69379C25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E0748794438A7C2BC9CCB28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4DCD2BE646CF2CEAC9BBD6 /* AppPreferencesStoreTests.swift in Sources */,
+				EC8123ABC0C81555E0247B5F /* AssetThumbnailServiceTests.swift in Sources */,
+				2FD33E23DFFBB8A9E26DB93D /* DownloadQueueTests.swift in Sources */,
+				16F1F63DF068D5872B026175 /* DownloadStoreTests.swift in Sources */,
+				64C6DB1FC21157C5121C5DAE /* DownloadThroughputDiagnosticsTests.swift in Sources */,
+				5B629771DAFD51B54318B3E1 /* PTPIPSessionAssetTraversalTests.swift in Sources */,
+				8C8824ED95C1126F6A40D897 /* PTPIPSessionTransferStrategyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF4E690F46AD0FD5A9CA05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79C15946A73A3F1B5E28185 /* ActiveDownloadProgress.swift in Sources */,
+				12AF060FD96063D9ACCD7F3E /* AlertContext.swift in Sources */,
+				058AD3D11615CA7CA57E3F16 /* AppLogger.swift in Sources */,
+				8305284A72A04C2C82EF675C /* AppPreferencesStore.swift in Sources */,
+				AEB1553C61CAED2E3C690EE3 /* AppPreferencesStoring.swift in Sources */,
+				015AF0830FEC030A0C1504EA /* AppShellViewModel.swift in Sources */,
+				EB1191B0D86508F7BC704924 /* AppTheme.swift in Sources */,
+				69F8D2726A9EBC1F796E3290 /* AssetThumbnailService.swift in Sources */,
+				FA39A88CA78F1EDF41CC0C80 /* AssetThumbnailServing.swift in Sources */,
+				FF59A12572A17FAA5174287E /* BackgroundDownloadExecutionService.swift in Sources */,
+				31B0B0DECB4BF4B43D4656C9 /* CameraAppError.swift in Sources */,
+				054B0F4F4FB99F0829FEE475 /* CameraConnectionConfig.swift in Sources */,
+				AB395CA34EA0B3CC19E3584B /* CameraSession.swift in Sources */,
+				E723D16261A59D0B228B4745 /* CameraSessionCoordinator.swift in Sources */,
+				71BD8542A8859468D3438D4B /* CameraTransport.swift in Sources */,
+				A9F1315091C74BE19EA2E162 /* CameraTransportFactory.swift in Sources */,
+				4190B44CAE038EB1835DA1A5 /* CameraTransportFactoryProtocol.swift in Sources */,
+				42545AC349BC74146BACAE70 /* CameraTransportMode.swift in Sources */,
+				A4AF3D133E6B3E689B164DA6 /* CameraWorkflowState.swift in Sources */,
+				0B52FFF496EB909D07F6038A /* ConnectionContainerView.swift in Sources */,
+				019E9D2ECAD4F07511A1F824 /* ConnectionSetupView.swift in Sources */,
+				0DA4EAEDB93E9FB294A681EB /* ConnectionViewModel.swift in Sources */,
+				FFAA54AC90ACEB6F49D7BAB5 /* DownloadActivityAttributes.swift in Sources */,
+				44C817AECB4F046786A67E19 /* DownloadJob.swift in Sources */,
+				D8CF2F5D683D5FF4E68358C2 /* DownloadLiveActivityController.swift in Sources */,
+				454F053FD919BD629A4F66F5 /* DownloadManagerViewModel.swift in Sources */,
+				5F640F944FB1D0E56562DDCA /* DownloadQueueState.swift in Sources */,
+				83058753A0FEA4A7BFCE6E41 /* DownloadRecord.swift in Sources */,
+				E0AFD9E900FCA618EB52C23A /* DownloadRecordRow.swift in Sources */,
+				9B31ED3B1D29746C4E369355 /* DownloadStore.swift in Sources */,
+				8D91CD59086CE8911A12C7AF /* DownloadStoring.swift in Sources */,
+				BF6B70E00D2CA846A30D64DA /* DownloadThroughputDiagnostics.swift in Sources */,
+				96CBC4DC8062CD7990B27E7A /* DownloadThroughputReportRow.swift in Sources */,
+				EE9E4067065D0277B26AECA3 /* DownloadsContainerView.swift in Sources */,
+				4407DAF3215B566EDB779D30 /* DownloadsView.swift in Sources */,
+				411280814B4793B200616B6A /* ExperimentalNikonTransport.swift in Sources */,
+				153B86EB7EE7F5D8D37A826E /* Formatters.swift in Sources */,
+				56F0D77BA74FDDEBF2FF9393 /* GalleryContainerView.swift in Sources */,
+				01EACF899D98680A173B6C12 /* GalleryViewModel.swift in Sources */,
+				DF342EEB3F8FAD2BA33DFDF3 /* LogEntry.swift in Sources */,
+				01A77D4C76B904FA0D0019E1 /* NikonConnectApp.swift in Sources */,
+				5A52B265CF2451EB56E1195D /* PTPIPPrimitives.swift in Sources */,
+				02016906DC00223A963D9E71 /* PTPIPSession+AssetTraversal.swift in Sources */,
+				B3DC5610DB78F088CA2D67C2 /* PTPIPSession+Lifecycle.swift in Sources */,
+				0C6477072E3DEB60E15CE883 /* PTPIPSession+Transfers.swift in Sources */,
+				5866D90034F60B18E96C01E9 /* PTPIPSession.swift in Sources */,
+				B27CCCD431B11EC27DB0DC3A /* PTPIPTCPConnection.swift in Sources */,
+				671E52AB213BC454EC053737 /* PhotoAsset.swift in Sources */,
+				37AD069E9EF5F9DE26D55275 /* PhotoAssetMerge.swift in Sources */,
+				19DA057EE2738D4E304F3688 /* PhotoAssetRow.swift in Sources */,
+				7B8AE830C8D5D6617A2B1F38 /* PhotoBrowserView.swift in Sources */,
+				E85D31CBD7F1B35BF66B04E5 /* PhotoLibraryExportService.swift in Sources */,
+				290F1A8C6227937823E9D9AC /* RootTabView.swift in Sources */,
+				0A15A58CFFA234348C997CE7 /* SettingsContainerView.swift in Sources */,
+				DC6454E25B983642CB5AFEB3 /* SettingsView.swift in Sources */,
+				A7C745AE3F4C7B4E2E5A3A84 /* SharedComponents.swift in Sources */,
+				40565CF5D8324FF7C8C56167 /* StatusBadgeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5FED79C7A693FD2FE1FE759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BF2CC27F20E49BA8E0CA79 /* DownloadActivityAttributes.swift in Sources */,
+				C1E772D7C1BFFEFD9CB0EF00 /* DownloadActivityWidget.swift in Sources */,
+				767B9E6B4337C250B97D7761 /* DownloadActivityWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4E9138B75C1E4A55A0C164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED7A56FD81A574F4683A08A5 /* NikonConnectIOS */;
+			targetProxy = F9A5556B0242A1E31C802D33 /* PBXContainerItemProxy */;
+		};
+		F68ACBDF69F43E412284BCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36BF0ABA4B73F5A11B5F94EC /* DownloadActivityWidgetExtension */;
+			targetProxy = 054FBAAC831F24D2EB980BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01C0AA62CE6C37F2FB72B2F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DownloadActivityWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOS.DownloadActivityWidget;
+				PRODUCT_MODULE_NAME = DownloadActivityWidget;
+				PRODUCT_NAME = DownloadActivityWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23EA18920889C74626339F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOSTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nikon Connect.app/Nikon Connect";
+			};
+			name = Release;
+		};
+		2CBB78D94D17CE6217B76C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOS;
+				PRODUCT_MODULE_NAME = NikonConnectIOS;
+				PRODUCT_NAME = "Nikon Connect";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3549A55F0DDF72B63DA92F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6P3T8J877R;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF9F977AD482104B05420CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6P3T8J877R;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E284268831A92A2D84134E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOS;
+				PRODUCT_MODULE_NAME = NikonConnectIOS;
+				PRODUCT_NAME = "Nikon Connect";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEBA50B69557BB1FA5965675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOSTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nikon Connect.app/Nikon Connect";
+			};
+			name = Debug;
+		};
+		F309A993B02F86BFB6F6DD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DownloadActivityWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjunhao.NikonConnectIOS.DownloadActivityWidget;
+				PRODUCT_MODULE_NAME = DownloadActivityWidget;
+				PRODUCT_NAME = DownloadActivityWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0148D55F11653571B5663666 /* Build configuration list for PBXProject "NikonConnectIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3549A55F0DDF72B63DA92F2D /* Debug */,
+				AF9F977AD482104B05420CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D8AD1A24B0CBF5DEDE195EE /* Build configuration list for PBXNativeTarget "NikonConnectIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E284268831A92A2D84134E82 /* Debug */,
+				2CBB78D94D17CE6217B76C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD36CB86C368D2C218349460 /* Build configuration list for PBXNativeTarget "DownloadActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C0AA62CE6C37F2FB72B2F2 /* Debug */,
+				F309A993B02F86BFB6F6DD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5E10EFA02C9C72BA0D69DF2 /* Build configuration list for PBXNativeTarget "NikonConnectIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBA50B69557BB1FA5965675 /* Debug */,
+				23EA18920889C74626339F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71396A98AFCA76A12ED28526 /* Project object */;
+}
